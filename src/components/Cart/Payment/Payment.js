@@ -42,7 +42,7 @@ export function Payment(props) {
               if (size(response) > 0) {
                 await emptyCart();
                 navigation.navigate(scrensName.account.root, {
-                  screen: scrensName.account.order,
+                  screen: scrensName.account.home,
                 });
               } else {
                 new Error("Error al realizar el pedido");
